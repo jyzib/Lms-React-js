@@ -2,6 +2,7 @@ import React from 'react'
 import boy from "/boy.png"
 import Exprence from './Exprence'
 import plane from "/plane.png"
+import Courses from './Courses'
 const Landingpage = () => {
   return (
     <>    <div className='landing_page' >
@@ -17,6 +18,8 @@ const Landingpage = () => {
 
 <div className="img"><img className='boy-landingpage' src={boy} alt="boy" /> </div>
     </div>
+    <Exprence/>
+    <Courses/>
     <Exprence/>
     </>
 
