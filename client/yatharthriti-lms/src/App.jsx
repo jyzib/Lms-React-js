@@ -4,6 +4,7 @@ import Landingpage from './component/Landingpage'
 import Navbar from './component/Navbar'
 import Login from './component/Login'
 import Allcourse from './component/Allcourse'
+import Coursebody from './component/Coursebody'
 function App() {
 
 
@@ -14,9 +15,11 @@ function App() {
 <Routes>
   <Route path='/'  />
   <Route index element={<Landingpage/>} />
-  <Route path='/course' element={<Allcourse/>} />
-    <Route  path='/course/:id' element={"singlecourse"} />
- 
+  <Route path='/course' element={<Coursebody/>} >
+    <Route  index element={<Allcourse/>} />
+    <Route path='learning-plan' element={"j"} />
+    <Route  path=':id' element={"singlecourse"} />
+ </Route>
   <Route path='/about' element={'about'} />
   <Route path='/login' element={<Login/>} />
 
